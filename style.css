@@ -1,6 +1,50 @@
-p{
-    background-color: aquamarine;
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    background-color: burlywood;
+    
+    
 }
-h3{
-    color:blue;
+.food{
+    border: 2px solid aqua;
+    border-radius: 10px;
+    background-color:darkkhaki;
+    padding: 10px;
+
+    
+}
+.food input{
+    background-color: cadetblue;
+    border: 1px solid cadetblue;
+    border-radius: 4px;
+}
+.food img{
+    width: 100%;
+}
+.food h3{
+    background-color:blueviolet;
+}
+/*smaller device*/
+@media screen and (max-width:500px){
+    .container{
+        grid-template-columns: repeat(2,1fr);
+        background-color: rgb(158, 43, 43);
+    }
+    .food h3{
+        background-color: darkolivegreen;
+    }
+    
+}
+/*medium device*/
+@media  screen and (min-width:501px) and (max-width:900px) {
+    .container{
+        grid-template-columns: repeat(3,1fr);
+        background-color: cornflowerblue;
+    }
+    .food h3{
+        background-color: grey;
+    }
+    
 }
